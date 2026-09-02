@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#333"/></marker>
+  </defs>
+  <rect width="1200" height="650" fill="#f7f7f7"/>
+  <text x="600" y="45" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold">AWS EC2 Start/Stop Cost Optimization</text>
+  <text x="600" y="75" text-anchor="middle" font-family="Arial" font-size="16">Serverless scheduled automation using Lambda, Python, EventBridge Scheduler and IAM</text>
+
+  <rect x="80" y="145" width="300" height="105" rx="14" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="230" y="180" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">EventBridge Scheduler</text>
+  <text x="230" y="210" text-anchor="middle" font-family="Arial" font-size="15">Start: 1:00 PM IST, Sun–Thu</text>
+  <text x="230" y="233" text-anchor="middle" font-family="Arial" font-size="15">Stop: 2:00 PM IST, Sun–Thu</text>
+
+  <rect x="460" y="120" width="280" height="160" rx="14" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="600" y="158" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">AWS Lambda</text>
+  <text x="600" y="188" text-anchor="middle" font-family="Arial" font-size="16">Python + boto3</text>
+  <text x="600" y="216" text-anchor="middle" font-family="Arial" font-size="15">Start tagged stopped instances</text>
+  <text x="600" y="241" text-anchor="middle" font-family="Arial" font-size="15">Stop tagged running instances</text>
+  <text x="600" y="266" text-anchor="middle" font-family="Arial" font-size="14">Tag: cost optimization</text>
+
+  <rect x="820" y="145" width="300" height="105" rx="14" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="970" y="180" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">Amazon EC2</text>
+  <text x="970" y="210" text-anchor="middle" font-family="Arial" font-size="15">Target instances</text>
+  <text x="970" y="233" text-anchor="middle" font-family="Arial" font-size="15">auto start/stop tag</text>
+
+  <line x1="380" y1="195" x2="460" y2="195" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="195" x2="820" y2="195" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="310" y="390" width="300" height="110" rx="14" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="460" y="428" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">IAM Execution Role</text>
+  <text x="460" y="457" text-anchor="middle" font-family="Arial" font-size="15">DescribeInstances</text>
+  <text x="460" y="480" text-anchor="middle" font-family="Arial" font-size="15">StartInstances / StopInstances</text>
+
+  <rect x="690" y="390" width="300" height="110" rx="14" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="840" y="428" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold">CloudWatch Logs</text>
+  <text x="840" y="457" text-anchor="middle" font-family="Arial" font-size="15">Execution logs</text>
+  <text x="840" y="480" text-anchor="middle" font-family="Arial" font-size="15">Errors and instance actions</text>
+
+  <line x1="600" y1="280" x2="460" y2="390" stroke="#333" stroke-width="2" stroke-dasharray="7,6" marker-end="url(#arrow)"/>
+  <line x1="600" y1="280" x2="840" y2="390" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="600" y="570" text-anchor="middle" font-family="Arial" font-size="16">Goal: reduce unnecessary EC2 runtime for non-production or scheduled workloads</text>
+  <text x="600" y="600" text-anchor="middle" font-family="Arial" font-size="13">Portfolio / lab implementation — review IAM resource restrictions and schedules before production use</text>
+</svg>
