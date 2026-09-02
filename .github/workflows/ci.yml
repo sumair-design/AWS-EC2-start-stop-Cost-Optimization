@@ -16,12 +16,13 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-dev.txt
 
       - name: Install dependencies
-        run: pip install -r requirements-dev.txt
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
 
       - name: Compile Lambda code
         run: python -m compileall lambda tests
 
       - name: Run tests
-        run: pytest -q
+        run: python -m pytest -q
