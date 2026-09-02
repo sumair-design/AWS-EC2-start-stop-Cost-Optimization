@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# AWS / local tooling
+.aws-sam/
+.sam/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
